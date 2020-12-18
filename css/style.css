@@ -1,101 +1,91 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-    color: #666;
-}
-
-
-/* Header/logo tiêu đề */
-
-header {
-    padding: 5px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    height: 120px;
-}
-
-
-/* Tăng kích thước font chữ cho header */
-
-header h1 {
-    font-size: 40px;
-}
-
-header h1,
-h2,
-h3 {
-    color: white;
-}
-
-section {
-    padding: 20px;
-}
-
-ul {
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-image: url('./image/anhkientruc.jpg');
 }
-
-li {
-    float: left;
-}
-
-li a,
-.dropbtn {
-    display: inline-block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active),
-.dropdown:hover .dropbtn {
-    color: white;
-    background-color: #4CAF50;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
+.login-box {
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 3px;
+    width: 400px;
+    box-shadow: #000 0 0 25px -10px;
+}
+.login-top .title {
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+.login-top .Image-Login {
+    height: 90px;
+    position: relative;
+}
+.login-main{
+    padding: 0 40px;
+}
+.textbox{
+    border:none;
+    outline: none;
+    background: none;
+}
+    .textbox input {
+        height: 41px;
+        font-family: inherit;
+        width: 100%;
+        padding: 0 8px;
+        border: solid 1px #e0e0e0;
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+        border-radius:4px;
+    }
+.btn-Login input {
+    margin-top: 15px;
+    line-height: 40px;
+    background-color: #355dbd;
+    width: 100%;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-main p{
+    margin: 10px 0;
+}
+.forget-passwork{
+    margin-top: 15px;
+    text-align:center;
+}
+.create-account {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom:20px;
+}
+    .forget-passwork, .create-account a {
+        color: #355dbd;
+        cursor: pointer;
+        font-size: 16px;
+    }
+.log-in:hover {
+   opacity: 0.6;
+}
+.Title-header-logo {
+    position: absolute;
+    color: red;
+    font-size: 26px;
+    font-weight: 600;
+    top: 37px;
+    left: 104px;
 }
 
-.dropdown-content a {
-    color: #666;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 
-/* Landing page */
 
-.hideable-section {
-    display: none;
-}
 
-.hideable-section:first-of-type {
-    display: block;
-}
